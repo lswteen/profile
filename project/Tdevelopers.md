@@ -35,27 +35,20 @@ TO-BE
 2013년 10월 정식오픈 후 현재도 운영 중인 상태입니다.
 정책적으로 B2B, B2C 모델 모두 제공을 하고 있습니다.
 
-현재 담당 업무는 운영 PM 이며 
-오픈당시 개발 PL역활을 담당하였을때는 "dPaaS"와 "BaaS" 서비스 PaaS형태에 서비스를 구현하였습니다.
+담당 업무는 운영 PM 이며 오픈당시 개발 PL역활을 담당하였을때는 "dPaaS"와 "BaaS" 서비스 PaaS형태에 서비스를 구현하였습니다.
 
-dPaaS 서비스는 apache CloudStack 오픈소스를 이용하여 VM을 3rd-party 유저에게 제공하는
-font부분을 개발하였습니다. front 부분 개발은 jQuery를 이용하여 비동기로 작업을 진행하였고
-Server와 통신은 Rest 을사용하여 개발하였습니다. 각VM생성 할당, 네트워크,스냅샵, 템플릿,VM 기동 등에 기능을 제공하고있습니다.
+dPaaS 서비스는 Apache CloudStack 오픈소스를 이용하여 VM을 3rd-party 유저에게 제공하는 부분을 개발하였다.
+3rd party User 제공할수있는 가장잘알려진 서비스와 비교하자면 AWS에서 제공하는 EC2 서비스를 구축하였는데 기능과 동일하다.
+Front 부분 개발은 jQuery를 이용하여 비동기로 작업을 진행하였고
+Server와 통신은 Restful API로 개발하였습니다. 각VM생성,네트워크,스냅샵,템플릿,VM 동작 등에 기능을 제공하고있습니다.
 
-"BaaS" 서비스는 parse.com 을 모티브로 기획하였고 3rd-party 유저에게 클라우드형태로 database를 제공합니다.
-서비스를 사용하면 기본적으로 논리적인 공간을 할당하며 Table단위에 스키마를 제공합니다. 
-
-그부분에서 BaaS에서 가장 많은 사용을 할수있는 Push 기능에 서버를 구현하였습니다.
-API Call 처리를 고민하는 과정중 비동기 데이터 처리, 클러스트링, 로그 시스템, 대용량 데이터처리, 사용하는데
-어려움이 없으며 설치가 쉬운 여러가지 오픈소스 Queue를 고민하던 중 실시간 모니터링 WEBPOC Tool 및 Spring과 연계한 소스샘플들이 존재하며 
-백업및 클러스트링이 설정만으로 처리할수있는 심플한 오픈 라이브러리인 Rabbitmq를 사용하였습니다.
-
-현재 SKT Joon Kids 앱이 등록되어 사용중이며 서버 1대당(2 Core, 4Mb memory) 단건 메시지는 초당 100건에 Request 요청시 
-Throuput은 45~46bps 수준이며 Server에서 처리할수있는 평균 TPS는 500(ms)정도에 처리율을 보이는 성능이슈에 대해서도 진행하였습니다.
-현재는 2대 Server L4(RR) 알고리즘으로 세팅하여 처리되고 있습니다.
+BaaS 서비스에서는 Push Server 구현을 담당하였습니다. GCM,APNS 로 발송되는 Push 개발을 담당하였습니다.
+Server 없이도 클라이언트만 개발이 가능한 구조이며 Jun Kids 폰서비스도해당 서버를 통하여 Push 를 전송하고 있습니다. 
+RabbitMQ에서 Simple Queue로 구현하였고 운영시 RabbitMQ에 대한 운영 레퍼런스가 없다보니 Queue 에 요청온 컨슘 처리나
+유실되는 Push Request 오류 로그 등 다양한 경험을 할수 있었습니다. 
 
 그외에 T developers 에서 처리되는 스케쥴링이나 서비스단위에 Internel API 설계,개발,검증,단위 테스트
-신규 Asset(Service) 추가에 대한 미팅 및 고객간에 커뮤니케이션을 담당하였습니다.
+신규 Asset(Service) 신규추가에 대한 미팅 및 고객간에 커뮤니케이션을 담당 하였습니다.
 
 추가적으로 DBA는 아니지만 T developers 에서 사용하고있는 Database(Mysql)설치및 이중화 사용자 권한 설정및
 DB dump backup 등을 관리하였습니다. DBA만큼 트러블슈팅을 빠르게 잡아내는스킬은 없지만 그만큼 실제
