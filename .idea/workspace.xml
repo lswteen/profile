@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f725ea3e-8208-4061-8162-d21b58cd1514" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/project/Tdevelopers.md" beforeDir="false" afterPath="$PROJECT_DIR$/project/Tdevelopers.md" afterDir="false" />
-    </list>
+    <list default="true" id="f725ea3e-8208-4061-8162-d21b58cd1514" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +15,8 @@
         <entry file="file://$PROJECT_DIR$/project/Tdevelopers.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="442">
-                <caret line="45" column="77" selection-start-line="45" selection-start-column="77" selection-end-line="45" selection-end-column="77" />
+              <first_editor relative-caret-position="172">
+                <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
               </first_editor>
               <second_editor />
             </state>
@@ -80,10 +78,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1322" />
-    <option name="y" value="141" />
-    <option name="width" value="1316" />
-    <option name="height" value="828" />
+    <option name="x" value="-1196" />
+    <option name="y" value="88" />
+    <option name="width" value="1190" />
+    <option name="height" value="881" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -197,15 +195,15 @@
       <workItem from="1536205565890" duration="1241000" />
       <workItem from="1536292664621" duration="24000" />
       <workItem from="1536556779386" duration="2434000" />
-      <workItem from="1536653053342" duration="4282000" />
+      <workItem from="1536653053342" duration="5006000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15171000" />
+    <option name="totallyTimeSpent" value="15895000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1322" y="141" width="1316" height="828" extended-state="0" />
+    <frame x="-1196" y="88" width="1190" height="881" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="PlantUML" order="3" />
@@ -222,7 +220,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15384616" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17073171" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="UML design tool window" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -749,8 +747,8 @@
     <entry file="file://$PROJECT_DIR$/project/Tdevelopers.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="442">
-            <caret line="45" column="77" selection-start-line="45" selection-start-column="77" selection-end-line="45" selection-end-column="77" />
+          <first_editor relative-caret-position="172">
+            <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           </first_editor>
           <second_editor />
         </state>
